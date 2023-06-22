@@ -14,14 +14,14 @@ namespace no.Components.ViewComponents
                     new MenuItem {Controller = "Libraries", Action = "Index", Label = "List"},
                     new MenuItem {Controller = "Libraries", Action = "Create", Label = "Create"},
                 } }, 
-                new MenuItem {Controller = "Books", Action = "Index", Label = "Library", DropdownItems = new List<MenuItem> {
+                new MenuItem {Controller = "Books", Action = "Index", Label = "Books", DropdownItems = new List<MenuItem> {
                     new MenuItem {Controller = "Books", Action = "Index", Label = "List"},
                     new MenuItem {Controller = "Books", Action = "Create", Label = "Create"},
                 } },
                 new MenuItem {Controller = "Home", Action = "Privacy", Label = "Privacy"},
             };
 
-            return View(); 
+            return View(menuItems); 
         }
     }
 }
